@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #0a3d50;
+}
+.container{
+    width:75%;
+    text-align: center;
+    margin:auto;
+}
+.dice{
+    display: inline-block;
+    margin:10px;
+}
+
+p{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 2px 0 yellowgreen;
+    color:#fff;
+
+}
+button{
+    padding:15px;
+    color: whitesmoke;
+    background:red;
+    border:none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+h1{
+    text-transform: uppercase;
+    margin:20px;
+    font-size: 50px;
+    text-shadow:3px 0 grey;
+    color:springgreen;
+}

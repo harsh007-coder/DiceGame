@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            dice game
+        </h1>
+        <div class="dice">
+            <p>player 1</p>
+            <img src="images/dice1.png" alt="" id="check1">
+        </div>
+
+        <div class="dice">
+            <p>player 2</p>
+            <img src="images/dice6.png" alt="" id="check2">
+        </div>
+
+      <div>
+        <button onclick="playgame()">click me</button>
+        </div>
+    </div>
+<script>
+    playgame = ()=>{
+    var game= Math.floor(Math.random()*6 + 1);
+    var diceplay = `images/dice${game}.png`;
+    document.getElementById('check1').setAttribute("src",diceplay);
+
+    var game1= Math.floor(Math.random()*6 + 1);
+    var diceplay1 = `images/dice${game1}.png`;
+    document.getElementById('check2').setAttribute("src",diceplay1);
+
+    if(diceplay>diceplay1){
+        document.querySelector('h1').innerHTML = "Player 1 wins (:";
+  }
+  else if(diceplay1>diceplay){
+      document.querySelector('h1').innerHTML = "player 2 wins (:";
+
+  }
+  else{
+      document.querySelector('h1').innerHTML = "its a draw";
+  }
+    }
+</script>
+</body>
+</html>
